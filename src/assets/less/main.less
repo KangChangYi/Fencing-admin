@@ -1,0 +1,25 @@
+// 字号
+@mainTitle:20px;
+@title:18px;
+@smallTitle:16px;
+@text:14px;
+@smallText:13px;
+@supportText:12px;
+// 字色
+@titleColor:#464c5b;
+@textColor:#657180;
+@supportTextColor:#9ea7b4;
+// 自定义 样式
+@border:1px red solid;
+.displayCenter(@justify-content:center,@align-items:center){
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+#app{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: @text;
+  color:@textColor;
+  width: 100%;
+  min-height:100vh;
+}
